@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+</head>
+<body>
+    <div class="site"> 
+        <header>
+               
+        </header>
+
+             
+        
+         <nav >
+
+                    <div> 
+                        <img src="/images/logo.png" width="50px"> 
+                    </div>
+
+                    <div>
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    
+                
+                    <div>
+
+                   
+                        <section  class="livre" class='myModal' >
+
+                            <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
+                                    LOGIN
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">LOGIN</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+            
+                                                <div class="modal-body">
+            
+                                                        <form onsubmit="Login(event)">
+
+
+                                                                <div>
+                                                                <label> Nom et Prenom</label>
+                                                                <input id="nom" type="text">
+                                                                </div>
+                                                                <div>
+                                                                <label> MAIL</label>
+                                                                <input id="mail" type="text">
+                                                                </div>
+                                                                <div>
+                                                                <label>PASSWORD </label>
+                                                                <input id="password" type="password">
+                                                                </div>
+                                        
+                                                                <button type="submit">Ajouter un produit</button>
+                                                        </form> 
+                                                </div>
+                                        <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+            
+                        </section>
+
+                        <section class="livre" id="prophil"> </section> 
+                       
+                     
+                
+                </div>
+                                
+        </nav>
+
+
+        <article>
+
+            <section  class="livre" class='myModal' >
+
+                <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        AJOUT LIVRE
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Ajouter Livres</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                                    <div class="modal-body">
+
+                                            <form onsubmit="AjouterProduit(event)">
+
+                                                    <div>
+                                                    <label> Titre</label>
+                                                    <input id="titre" type="text">
+                                                    </div>
+                                                    <div>
+                                                    <label>Auteur </label>
+                                                    <input id="auteur" type="text">
+                                                    </div>
+                                                    <div>
+                                                    <label>Date de publication</label>
+                                                    <input id="date" type="number">
+                                                    </div>
+                                                    <div>
+                                                    <label>Etoiltes</label>
+                                                    <input id="note" type="number">
+                                                    </div>
+                                                    <div>
+                                                    <label>Genres</label>
+                                                    <input id="description" type="text"> 
+                                                    </div>
+                                                    <div>
+                                                    <label>Prix</label>
+                                                    <input id="prix" type="number">
+                                                    </div>
+                            
+                                                    <button type="submit">Ajouter un produit</button>
+                                            </form> 
+                                    </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+
+            </section>
+
+
+            <h1>Tout les livres</h1>
+            <section  class="livre" id="products-container">
+                
+            </section>
+
+            <h1>Petit prix</h1>
+            <section  class="livre" id="products-pp-container">
+                
+            </section>
+
+            <h1>Mieux notés </h1>
+            <section  class="livre" id="products-mn-container">
+                
+            </section>
+
+            <section>
+
+            </section>
+
+            <section>
+
+            </section>
+      
+
+        </article>
+
+        <footer>
+
+        </footer>
+
+    
+        <script src="https://kit.fontawesome.com/11c53dcad8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="projet9.js"> </script>
+    </div>    
+</body>
+</html>

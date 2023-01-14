@@ -1,0 +1,123 @@
+.site {
+    width: 100%;
+    margin: auto;
+    padding: auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "nav"
+        "article"
+        "footer"
+    ;
+
+}
+
+
+header {
+    grid-area: header;
+}
+
+nav {
+    grid-area: nav;
+}
+
+article {
+    grid-area: article;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+@media only screen and (max-width:899px) and (min-width:501px) {
+
+    /*.rien {
+        display: none;
+    }*/
+
+    .dim {
+        width: 300px;
+        margin:auto;
+        padding: auto;
+    }
+
+    .site {
+        width: 75%;
+
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+
+            "header"
+            "nav"
+            "article"
+            "footer"
+        ;
+
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+
+    /*.rien {
+        display: none;
+    }*/
+
+    .site {
+        width: 350px;
+
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        
+            "header"
+            "nav"
+            "article"
+            "footer"
+        ;
+
+    }
+
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* background-color:rgba(red, green, blue, 0.3); */
+    /* position: fixed; */
+    width: 95%;  
+}
+
+nav a {
+    font-size: 20px;
+    /* color:white; */
+    margin: 5px 20px;
+}
+
+a {
+    text-decoration: none;
+    color:blue;
+}
+
+.livre {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+
+img {
+    width: 50PX;
+}
+
+/* .org {
+    flex-wrap: wrap;
+} */
