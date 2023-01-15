@@ -249,7 +249,7 @@ var listProduits = [
         <img src=${produit.image}
         <h1>${produit.titre}</h1>
         <p>${produit.description}</p>
-        <h6>${produit.prix} </h6>
+        <h6>${produit.prix}$ </h6>
         <h6>${produit.auteur} </h6>
         <h6>${produit.publication} </h6>
         <h6>${produit.note} </h6> 
@@ -284,7 +284,7 @@ function AjouterProduit(event) {
     <h3>${date} </h3>
     <h3>${note} </h3>
     <p>${description}</p>
-    <h6>${prix} </h6>
+    <h6>${prix} $</h6>
     </div>
   `;
     
@@ -301,7 +301,7 @@ function AjouterProduit(event) {
           <h3>${date} </h3>
           <h3>${note} </h3>
           <p>${description}</p>
-          <h6>${prix} </h6>
+          <h6>${prix} $ </h6>
         
         </div>
       `;
@@ -321,7 +321,7 @@ function AjouterProduit(event) {
          <h3>${date} </h3>
          <h3>${note} </h3>
          <p>${description}</p>
-         <h6>${prix} </h6>
+         <h6>${prix} $</h6>
        
        </div>
      `;

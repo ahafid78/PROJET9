@@ -13,29 +13,26 @@
 </head>
 <body>
     <div class="site"> 
-        <header>
-               
+
+        <header id="haut">
+            <a href="#bas"> Bas de page  </a> 
         </header>
-
-             
         
-         <nav >
-
-                    <div> 
-                        <img src="/images/logo.png" width="50px"> 
+         <nav > 
+       
+                    <div class="logo"> 
+                        <img src="/images/com.png" width="50px"> 
                     </div>
 
                     <div>
-                    <i class="fa-brands fa-facebook"></i> 
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i> </a>
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
-                    
-                
+                                    
                     <div>
-
-                   
-                        <section  class="livre" class='myModal' >
+                 
+                        <section class='myModal' >
 
                             <!-- Button trigger modal -->
                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Modal">
@@ -93,7 +90,7 @@
 
         <article>
 
-            <section  class="livre" class='myModal' >
+            <section class='myModal' >
 
                 <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -122,8 +119,16 @@
                                                     <input id="auteur" type="text">
                                                     </div>
                                                     <div>
-                                                    <label>Date de publication</label>
-                                                    <input id="date" type="number">
+                                                    <!-- <label>Date de publication</label>
+                                                    <input id="date" type="number"> -->
+
+                                                    <label for="start">Start date:</label>
+
+                                                    <input type="date" id="date" name="trip-start"
+                                                           value="2022-07-22"
+                                                           min="2005-01-01" max="2053-12-31">
+                                                        
+
                                                     </div>
                                                     <div>
                                                     <label>Etoiltes</label>
@@ -152,17 +157,17 @@
             </section>
 
 
-            <h1>Tout les livres</h1>
+            <h1 class="titre">Tout les livres :</h1>
             <section  class="livre" id="products-container">
                 
             </section>
 
-            <h1>Petit prix</h1>
+            <h1 class="titre">Petit prix :</h1>
             <section  class="livre" id="products-pp-container">
                 
             </section>
 
-            <h1>Mieux notés </h1>
+            <h1 class="titre">Mieux notés : </h1>
             <section  class="livre" id="products-mn-container">
                 
             </section>
@@ -178,8 +183,8 @@
 
         </article>
 
-        <footer>
-
+        <footer id="bas">
+            <a href="#haut">Haut de page</a>
         </footer>
 
     

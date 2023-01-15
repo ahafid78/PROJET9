@@ -1,3 +1,9 @@
+body {
+
+margin-top: 2px;
+padding-top: 2px;
+}
+
 .site {
     width: 100%;
     margin: auto;
@@ -118,6 +124,23 @@ img {
     width: 50PX;
 }
 
-/* .org {
-    flex-wrap: wrap;
-} */
+.logo {
+
+margin-top: 3px;
+padding-top: 3px;
+margin-bottom: 3px;
+padding-bottom: 3px;
+
+}
+
+.myModal {
+margin-top: 3px;
+padding-top: 3PX;
+margin-bottom: 30px;
+padding-top: 5px;
+
+}
+
+.titre {
+    color: cornflowerblue;
+}
