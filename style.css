@@ -120,9 +120,10 @@ a {
     margin-left: 20px;
 }
 
-img {
-    width: 50PX;
-}
+/* img {
+    
+    width: 50px;
+} */
 
 .logo {
 
@@ -143,4 +144,10 @@ padding-top: 5px;
 
 .titre {
     color: cornflowerblue;
+}
+
+.ima {
+
+width: 120px;
+
 }
